@@ -52,6 +52,7 @@ PORTFOLIO_DATA = {
         {"name": "GitHub",     "category": "Tools"},
         {"name": "VS Code",    "category": "Tools"},
         {"name": "SQL",        "category": "Databases"},
+        {"name": "Render",     "category": "Deployment"},
     ],
 
     # ── Projects ─────────────────────────────────────────────────────────────
@@ -159,6 +160,7 @@ def send_contact_email(name: str, email: str, subject: str, message: str) -> boo
 # ─── ROUTES ─────────────────────────────────────────────────────────────────
 @app.route("/")
 def home():
+    print(f"[DEBUG] Loaded {len(PORTFOLIO_DATA['skills'])} skills")
     return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
 
 
