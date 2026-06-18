@@ -15,7 +15,7 @@ A personal developer portfolio built with Flask, showcasing my projects, skills,
 - Skills & Tools showcase
 - Projects section
 - Certificates section
-- Contact form
+- Contact links (Email, GitHub, LinkedIn)
 
 ---
 
