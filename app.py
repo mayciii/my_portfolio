@@ -9,7 +9,6 @@ load_dotenv()
 app = Flask(__name__)
 
 
-
 # ─── PORTFOLIO DATA ──────────────────────────────────────────────────────────
 PORTFOLIO_DATA = {
     "name":     "May Sigrid Dimaano",
@@ -90,20 +89,15 @@ PORTFOLIO_DATA = {
 }
 
 
-
 # ─── ROUTES ─────────────────────────────────────────────────────────────────
 @app.route("/")
 def home():
-    print(f"[DEBUG] Loaded {len(PORTFOLIO_DATA['skills'])} skills")
     return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
 
 
 @app.route("/api/portfolio")
 def api_portfolio():
     return jsonify(PORTFOLIO_DATA)
-
-
-
 
 
 # ─── ENTRY POINT ─────────────────────────────────────────────────────────────
