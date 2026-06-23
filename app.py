@@ -81,10 +81,34 @@ PORTFOLIO_DATA = {
     # static/images/certs/ and set "image": "your-filename.jpg"
     # Leave "image" as None (or omit it) to show the placeholder graphic.
     "certificates": [
-        {"title": "AI Fundamentals", "issuer": "DataCamp", "date": "2026", "image": None},
-        {"title": "Introduction to Python", "issuer": "DataCamp", "date": "2026", "image": None},
-        {"title": "Intermediate SQL", "issuer": "DataCamp", "date": "2026", "image": None},
-        {"title": "Understanding Machine Learning", "issuer": "DataCamp", "date": "2026", "image": None},
+        {
+            "title": "AI Fundamentals",
+            "issuer": "DataCamp",
+            "date": "2026",
+            "image": None,
+            "url": "https://www.datacamp.com/skill-verification/AIF0021180003185"
+        },
+        {
+            "title": "Introduction to Python",
+            "issuer": "DataCamp | Course",
+            "date": "2026",
+            "image": None,
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/43e368dac6af8127a9608463d91e15e292984c53"
+        },
+        {
+            "title": "Large Language Models (LLMs) Concepts",
+            "issuer": "DataCamp | Course",
+            "date": "2026",
+            "image": None,
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/89d836d6760905853864283aae839257234c6ecd"
+        },
+        {
+            "title": "Understanding Machine Learning",
+            "issuer": "DataCamp | Course",
+            "date": "2026",
+            "image": None,
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/f9f5c2200ed477ef6f21b2f4fdd45b95b3dd451c"
+        },
     ],
 }
 
