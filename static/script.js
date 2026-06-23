@@ -1,8 +1,4 @@
-/* ══════════════════════════════════════════════════════
-   PORTFOLIO — script.js
-   Enhanced: skill bars, cert animations, form validation,
-             active nav, tilt, parallax, cursor glow
-   ══════════════════════════════════════════════════════ */
+
 
 document.addEventListener('DOMContentLoaded', () => {
 
