@@ -1,6 +1,5 @@
 import os
-import re
-from flask import Flask, render_template, jsonify, request
+from flask import Flask, render_template, jsonify
 from datetime import datetime
 from dotenv import load_dotenv
 
