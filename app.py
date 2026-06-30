@@ -12,12 +12,12 @@ app = Flask(__name__)
 # ─── PORTFOLIO DATA ──────────────────────────────────────────────────────────
 PORTFOLIO_DATA = {
     "name":     "May Sigrid Dimaano",
-    "title":    "Aspiring Software Engineer",
+    "title":    "Aspiring AI/ML Engineer",
     "email":    "sigriddimaano@gmail.com",
     "github":   "https://github.com/mayciii",
     "linkedin": "https://www.linkedin.com/in/may-sigrid-dimaano-4052a43aa",
     "about": (
-        "Information Technology student passionate about full-stack development. "
+        "Information Technology student passionate about AI development. "
         "I love turning ideas into real, working applications — from crafting "
         "clean UIs to building solid backend systems."
     ),
