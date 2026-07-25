@@ -93,7 +93,7 @@ PORTFOLIO_DATA = {
             "issuer": "St. Paul University - Open University | Course",
             "date": "2026",
             "image": None,
-            "url": "https://drive.google.com/drive/folders/1-14U1qPXwtgs_ZkXtXOZRDIIaM0LBCB8"
+            "url": "https://drive.google.com/file/d/1rrXaXt1GXxzTtCZPzCsShfHh1CkPPPNR/view?usp=sharing"
         },
         {
             "title": "Github Foundations",
