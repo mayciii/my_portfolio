@@ -89,11 +89,11 @@ PORTFOLIO_DATA = {
             "url": "https://www.datacamp.com/skill-verification/AIF0021180003185"
         },
         {
-            "title": "Introduction to Python",
-            "issuer": "DataCamp | Course",
+            "title": "Project Management",
+            "issuer": "St. Paul University - Open University | Course",
             "date": "2026",
             "image": None,
-            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/43e368dac6af8127a9608463d91e15e292984c53"
+            "url": "https://drive.google.com/drive/folders/1-14U1qPXwtgs_ZkXtXOZRDIIaM0LBCB8"
         },
         {
             "title": "Github Foundations",
