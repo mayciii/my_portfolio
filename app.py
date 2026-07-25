@@ -96,11 +96,11 @@ PORTFOLIO_DATA = {
             "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/43e368dac6af8127a9608463d91e15e292984c53"
         },
         {
-            "title": "Large Language Models (LLMs) Concepts",
-            "issuer": "DataCamp | Course",
+            "title": "Github Foundations",
+            "issuer": "DataCamp | Skill Track",
             "date": "2026",
             "image": None,
-            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/course/89d836d6760905853864283aae839257234c6ecd"
+            "url": "https://www.datacamp.com/completed/statement-of-accomplishment/track/2c076bd6876e2b427fd8ae39c1cb8d6262334d96?utm_medium=organic_social&utm_campaign=sharewidget&utm_content=soa"
         },
         {
             "title": "Understanding Machine Learning",
