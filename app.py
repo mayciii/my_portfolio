@@ -9,7 +9,6 @@ load_dotenv()
 app = Flask(__name__)
 
 
-# ─── PORTFOLIO DATA ──────────────────────────────────────────────────────────
 PORTFOLIO_DATA = {
     "name":     "May Sigrid Dimaano",
     "title":    "Aspiring AI/ML Engineer",
@@ -22,7 +21,6 @@ PORTFOLIO_DATA = {
         "clean UIs to building solid backend systems."
     ),
 
-    # ── Skills ──────────────────────────────────────────────────────────────
     "skills": [
         {"name": "HTML",       "category": "Web Development"},
         {"name": "CSS",        "category": "Web Development"},
@@ -34,8 +32,8 @@ PORTFOLIO_DATA = {
         {"name": "SQL",        "category": "Databases"},
         {"name": "Render",     "category": "Deployment"},
     ],
-
-    # ── Projects ─────────────────────────────────────────────────────────────
+    
+   
     "projects": [
         {
             "title": "Smart Blood Donor Eligibility Screening System",
@@ -76,10 +74,33 @@ PORTFOLIO_DATA = {
         }
     ],
 
-    # ── Certificates ─────────────────────────────────────────────────────────
-    # To add a certificate image: place the image file in
-    # static/images/certs/ and set "image": "your-filename.jpg"
-    # Leave "image" as None (or omit it) to show the placeholder graphic.
+    "experience": [
+        {
+            "role": "AI & Machine Learning Intern",
+            "org": "FlyRank AI",
+            "period": "July 2026 – Present",
+            "icon": "🤖",
+            "current": True,
+            "description": (
+                "Completing the General AI Fluency track, building hands-on "
+                "AI/ML deliverables and applied machine learning workflows."
+            ),
+            "tags": ["AI/ML", "Applied AI", "Remote Internship"],
+        },
+        {
+            "role": "DataCamp Scholar",
+            "org": "DataCamp",
+            "period": "February 2026 – Present",
+            "icon": "🎓",
+            "current": True,
+            "description": (
+                "Completing structured coursework in AI fundamentals, "
+                "machine learning, and data analytics."
+            ),
+            "tags": ["Data Analytics", "AI Fundamentals", "Machine Learning"],
+        },
+    ],
+
     "certificates": [
         {
             "title": "AI Fundamentals",
@@ -113,8 +134,7 @@ PORTFOLIO_DATA = {
 }
 
 
-# ─── ROUTES ─────────────────────────────────────────────────────────────────
-@app.route("/")
+# ROUTES
 def home():
     return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
 
@@ -124,7 +144,6 @@ def api_portfolio():
     return jsonify(PORTFOLIO_DATA)
 
 
-# ─── ENTRY POINT ─────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
     app.run(debug=debug_mode)
