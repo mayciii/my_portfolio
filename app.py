@@ -135,7 +135,10 @@ PORTFOLIO_DATA = {
 
 
 # ROUTES
+<<<<<<< HEAD
 @app.route("/")
+=======
+>>>>>>> b6d315d246c888b726565aecb958568781c2aee4
 def home():
     return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
 
