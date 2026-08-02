@@ -9,7 +9,6 @@ load_dotenv()
 app = Flask(__name__)
 
 
-# ─── PORTFOLIO DATA ──────────────────────────────────────────────────────────
 PORTFOLIO_DATA = {
     "name":     "May Sigrid Dimaano",
     "title":    "Aspiring AI/ML Engineer",
@@ -22,7 +21,6 @@ PORTFOLIO_DATA = {
         "clean UIs to building solid backend systems."
     ),
 
-    # ── Skills ──────────────────────────────────────────────────────────────
     "skills": [
         {"name": "HTML",       "category": "Web Development"},
         {"name": "CSS",        "category": "Web Development"},
@@ -35,7 +33,7 @@ PORTFOLIO_DATA = {
         {"name": "Render",     "category": "Deployment"},
     ],
 
-    # ── Projects ─────────────────────────────────────────────────────────────
+   
     "projects": [
         {
             "title": "Smart Blood Donor Eligibility Screening System",
@@ -76,10 +74,7 @@ PORTFOLIO_DATA = {
         }
     ],
 
-    # ── Certificates ─────────────────────────────────────────────────────────
-    # To add a certificate image: place the image file in
-    # static/images/certs/ and set "image": "your-filename.jpg"
-    # Leave "image" as None (or omit it) to show the placeholder graphic.
+  
     "certificates": [
         {
             "title": "AI Fundamentals",
@@ -113,8 +108,7 @@ PORTFOLIO_DATA = {
 }
 
 
-# ─── ROUTES ─────────────────────────────────────────────────────────────────
-@app.route("/")
+# ROUTES
 def home():
     return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
 
@@ -124,7 +118,6 @@ def api_portfolio():
     return jsonify(PORTFOLIO_DATA)
 
 
-# ─── ENTRY POINT ─────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     debug_mode = os.getenv("FLASK_DEBUG", "false").lower() == "true"
     app.run(debug=debug_mode)
