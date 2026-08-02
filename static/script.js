@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
         entries.forEach(entry => {
             if (!entry.isIntersecting) return;
             const children = entry.target.querySelectorAll(
-                '.skill-card, .project-card, .cert-card'
+                '.skill-card, .project-card, .cert-card, .timeline-item'
             );
             children.forEach((child, i) => {
                 child.style.opacity = '0';
@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, { threshold: 0.04 });
 
-    document.querySelectorAll('.skills-grid, .projects-grid, .certificates-grid')
+    document.querySelectorAll('.skills-grid, .projects-grid, .certificates-grid, .experience-timeline')
         .forEach(g => staggerObserver.observe(g));
 
     /* ══════════════════════════════════════

@@ -32,7 +32,7 @@ PORTFOLIO_DATA = {
         {"name": "SQL",        "category": "Databases"},
         {"name": "Render",     "category": "Deployment"},
     ],
-
+    
    
     "projects": [
         {
@@ -74,7 +74,33 @@ PORTFOLIO_DATA = {
         }
     ],
 
-  
+    "experience": [
+        {
+            "role": "AI & Machine Learning Intern",
+            "org": "FlyRank AI",
+            "period": "July 2026 – Present",
+            "icon": "🤖",
+            "current": True,
+            "description": (
+                "Completing the General AI Fluency track, building hands-on "
+                "AI/ML deliverables and applied machine learning workflows."
+            ),
+            "tags": ["AI/ML", "Applied AI", "Remote Internship"],
+        },
+        {
+            "role": "DataCamp Scholar",
+            "org": "DataCamp",
+            "period": "February 2026 – Present",
+            "icon": "🎓",
+            "current": True,
+            "description": (
+                "Completing structured coursework in AI fundamentals, "
+                "machine learning, and data analytics."
+            ),
+            "tags": ["Data Analytics", "AI Fundamentals", "Machine Learning"],
+        },
+    ],
+
     "certificates": [
         {
             "title": "AI Fundamentals",
