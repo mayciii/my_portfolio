@@ -35,7 +35,7 @@ A personal developer portfolio built with Flask, showcasing my projects, skills,
 - Flask
 - HTML / CSS / JavaScript
 - Gunicorn
-- Render (Hosting)
+- Render & Vercel (Hosting)
 
 ---
 
@@ -47,4 +47,4 @@ A personal developer portfolio built with Flask, showcasing my projects, skills,
 
 ---
 
-> This project is part of my journey toward becoming a Software Engineer and Data Scientist. 🚀
+> This project is part of my journey toward becoming a AI Engineer. 🚀

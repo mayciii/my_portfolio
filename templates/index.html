@@ -154,7 +154,9 @@
                     </div>
                     <div class="timeline-card glass-card">
                         <div class="timeline-card-header">
-                            <span class="timeline-icon">{{ exp.icon }}</span>
+                            <img class="timeline-logo-slot"
+                                src="{{ url_for('static', filename=exp.logo) }}"
+                                alt="{{ exp.org }} logo">
                             <div class="timeline-titles">
                                 <h3 class="timeline-role">{{ exp.role }}</h3>
                                 <span class="timeline-org">{{ exp.org }}</span>

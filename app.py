@@ -79,7 +79,7 @@ PORTFOLIO_DATA = {
             "role": "AI & Machine Learning Intern",
             "org": "FlyRank AI",
             "period": "July 2026 – Present",
-            "icon": "🤖",
+            "logo": "images/experience/flyrank_logo.jpg",
             "current": True,
             "description": (
                 "Completing the General AI Fluency track, building hands-on "
@@ -91,7 +91,7 @@ PORTFOLIO_DATA = {
             "role": "DataCamp Scholar",
             "org": "DataCamp",
             "period": "February 2026 – Present",
-            "icon": "🎓",
+            "logo": "images/experience/datacamp.png",
             "current": True,
             "description": (
                 "Completing structured coursework in AI fundamentals, "
@@ -99,6 +99,18 @@ PORTFOLIO_DATA = {
             ),
             "tags": ["Data Analytics", "AI Fundamentals", "Machine Learning"],
         },
+        {
+            "role": "Data Science & AI Trainee",
+            "org": "Matsuo-Iwasawa Lab U-Tokyo",
+            "period": "September 2026 – Present",
+            "logo": "images/experience/matsuologo.jpg",
+            "current": True,
+            "description": (
+                "An educational program focused on Artificial Intelligence, data science, and machine learning, "
+                "providing hands-on learning experiences in data analysis, programming, and practical applications of AI technologies."
+            ),
+            "tags": ["AI", "Python", "Data Science"],
+        }
     ],
 
     "certificates": [
