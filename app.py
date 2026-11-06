@@ -37,6 +37,7 @@ PORTFOLIO_DATA = {
     "projects": [
         {
             "title": "Smart Blood Donor Eligibility Screening System",
+            "image": "images/projects/smart.png",
             "description": (
                 "Implements AI logic to check and analyze the health assessment of potential "
                 "blood donors, ensuring only qualified individuals proceed to donation."
@@ -46,6 +47,7 @@ PORTFOLIO_DATA = {
         },
         {
             "title": "Console-Based Barangay Equipment Borrowing and Return Tracking System",
+            "image": None,
             "description": (
                 "Centralizes equipment tracking and borrower records to provide real-time updates "
                 "on item availability and automated transaction logging."
@@ -55,6 +57,7 @@ PORTFOLIO_DATA = {
         },
         {
             "title": "SABTRACK: Web-based Waste Tracking & Reporting System for Barangay Sabang",
+            "image": "images/projects/sabtrack.png",
             "description": (
                 "A web-based waste management system for Barangay Sabang that lets residents and "
                 "officials view collection schedules, report issues, receive announcements, and "
@@ -64,6 +67,7 @@ PORTFOLIO_DATA = {
             "github": "https://github.com/mayciii/SABTRACK",
         },
         {   "title": "BatStateU-TNEU Lipa SITES",
+            "image": "images/projects/sites.png",
             "description": (
                 "A Web-Based Student Internship Tracking and Evaluation System "
                 "for On-the-Job Training Management at Batangas State University TNEU Lipa Campus"
