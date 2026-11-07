@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Mayciii | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ data.name }} — {{ data.title }}. Portfolio showcasing projects and skills.">
+    <meta name="description" content="{{ data.name }} — {{ data.title }}. Portfolio showcasing projects and technologies.">
     <meta name="theme-color" content="#050914">
     <meta name="theme-color" content="#050914">
     <link rel="icon" type="image/jpeg" href="{{ url_for('static', filename='images/favicooon.png') }}">
@@ -53,7 +53,7 @@
                     <li><a href="#hero">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#experience">Experience</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#technologies">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#certificates">Certificates</a></li>
                     <li><a href="#contact" class="nav-cta">Contact</a></li>
@@ -178,60 +178,7 @@
             </div>
         </section>
 
-        <!-- ─── SKILLS ─── -->
-        <section id="skills" class="skills-section wrap reveal">
-            <div class="toolkit-panel">
-                <div class="toolkit-heading">
-                    <div class="toolkit-eyebrow">
-                        <span>// Skills & Tools</span>
-                        <span class="toolkit-eyebrow-line"></span>
-                    </div>
-                    <div>
-                        <h2>My Toolkit</h2>
-                        <p class="toolkit-sub">Technologies and languages I work with</p>
-                    </div>
-                </div>
-                <div class="toolkit-list">
-                    <div class="toolkit-row">
-                        <span>HTML</span>
-                        <span class="toolkit-pill toolkit-pill--teal">Web Dev</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>CSS</span>
-                        <span class="toolkit-pill toolkit-pill--teal">Web Dev</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>JavaScript</span>
-                        <span class="toolkit-pill toolkit-pill--teal">Web Dev</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>Python</span>
-                        <span class="toolkit-pill toolkit-pill--blue">Language</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>Java</span>
-                        <span class="toolkit-pill toolkit-pill--blue">Language</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>GitHub</span>
-                        <span class="toolkit-pill toolkit-pill--lavender">Tools</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>VS Code</span>
-                        <span class="toolkit-pill toolkit-pill--lavender">Tools</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>SQL</span>
-                        <span class="toolkit-pill toolkit-pill--amber">Database</span>
-                    </div>
-                    <div class="toolkit-row">
-                        <span>Render</span>
-                        <span class="toolkit-pill toolkit-pill--red">Deployment</span>
-                    </div>
-                </div>
-                
-            </div>
-        </section>
+        {% include "partials/technologies.html" %}
 
         <!-- ─── PROJECTS ─── -->
         <section id="projects" class="projects-section wrap reveal">

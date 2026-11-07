@@ -1,0 +1,31 @@
+<section id="technologies" class="technologies-section wrap reveal" aria-labelledby="technologies-title">
+    <div class="toolkit-panel">
+        <div class="toolkit-heading">
+            <div class="toolkit-eyebrow">
+                <span>// EXPLORED</span>
+                <span class="toolkit-eyebrow-line"></span>
+            </div>
+            <div>
+                <h2 id="technologies-title">Technologies I've Tried</h2>
+                <p class="toolkit-sub">Tools and frameworks I've explored beyond my core stack</p>
+            </div>
+        </div>
+        <div class="technologies-grid">
+            {% for technology in technologies %}
+            <article class="technology-category toolkit-pill--{{ {'teal': 'teal', 'indigo': 'blue', 'amber': 'amber', 'red': 'red', 'purple': 'lavender'}[technology.accent] }}">
+                <div class="technology-category-heading">
+                    <span class="technology-icon">
+                        <img src="{{ url_for('static', filename='icons/' ~ technology.icon) }}" alt="" aria-hidden="true">
+                    </span>
+                    <h3>{{ technology.title }}</h3>
+                </div>
+                <ul class="technology-pills">
+                    {% for item in technology["items"] %}
+                    <li class="toolkit-pill toolkit-pill--{{ {'teal': 'teal', 'indigo': 'blue', 'amber': 'amber', 'red': 'red', 'purple': 'lavender'}[technology.accent] }}">{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </article>
+            {% endfor %}
+        </div>
+    </div>
+</section>

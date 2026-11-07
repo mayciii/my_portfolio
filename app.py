@@ -21,16 +21,49 @@ PORTFOLIO_DATA = {
         "clean UIs to building solid backend systems."
     ),
 
-    "skills": [
-        {"name": "HTML",       "category": "Web Development"},
-        {"name": "CSS",        "category": "Web Development"},
-        {"name": "JavaScript", "category": "Web Development"},
-        {"name": "Python",     "category": "Programming Languages"},
-        {"name": "Java",       "category": "Programming Languages"},
-        {"name": "GitHub",     "category": "Tools"},
-        {"name": "VS Code",    "category": "Tools"},
-        {"name": "SQL",        "category": "Databases"},
-        {"name": "Render",     "category": "Deployment"},
+    "technologies": [
+        {
+            "title": "Frontend Development",
+            "icon": "html5.svg",
+            "accent": "teal",
+            "items": ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+        },
+        {
+            "title": "Frameworks & Libraries",
+            "icon": "nextjs.svg",
+            "accent": "teal",
+            "items": ["React", "Next.js"],
+        },
+        {
+            "title": "Backend Development",
+            "icon": "nodejs.svg",
+            "accent": "teal",
+            "items": ["Node.js", "PHP", "Flask", "Python"],
+        },
+        {
+            "title": "Databases",
+            "icon": "mongodb.svg",
+            "accent": "amber",
+            "items": ["MySQL", "PostgreSQL", "MongoDB", "SQLite"],
+        },
+        {
+            "title": "Deployment",
+            "icon": "cloud.svg",
+            "accent": "red",
+            "items": ["Vercel", "Render"],
+        },
+        {
+            "title": "Development Tools",
+            "icon": "git.svg",
+            "accent": "purple",
+            "items": ["Git", "GitHub", "VS Code"],
+        },
+        {
+            "title": "UI/UX Tools",
+            "icon": "figma.svg",
+            "accent": "purple",
+            "items": ["Figma", "Canva"],
+        },
     ],
     
    
@@ -146,7 +179,12 @@ PORTFOLIO_DATA = {
 
 
 def home():
-    return render_template("index.html", data=PORTFOLIO_DATA, year=datetime.now().year)
+    return render_template(
+        "index.html",
+        data=PORTFOLIO_DATA,
+        technologies=PORTFOLIO_DATA["technologies"],
+        year=datetime.now().year,
+    )
 
 
 @app.route("/api/portfolio")

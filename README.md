@@ -12,7 +12,7 @@ A personal developer portfolio built with Flask, showcasing my projects, skills,
 
 - Hero section with introduction
 - About section
-- Skills & Tools showcase
+- Technologies I've Tried section with icons in `static/icons/`; category entries and icon filenames are maintained in `PORTFOLIO_DATA["technologies"]` in `app.py`.
 - Projects section
 - Certificates section
 - Contact links (Email, GitHub, LinkedIn)

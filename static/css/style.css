@@ -987,43 +987,6 @@ footer {
     line-height: 1.7;
 }
 
-.toolkit-list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(240px, 1fr));
-    gap: 0.75rem 2rem;
-}
-
-.toolkit-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 0.8rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-    font-family: 'Space Grotesk', sans-serif;
-    color: rgba(255, 255, 255, 0.92);
-    min-width: 0;
-}
-
-.toolkit-row:last-child {
-    border-bottom: none;
-}
-
-.toolkit-row span {
-    min-width: 0;
-}
-
-.toolkit-row span:first-child {
-    font-size: 1rem;
-    font-weight: 600;
-    overflow-wrap: anywhere;
-    flex: 1 1 auto;
-    margin-right: 1rem;
-}
-
-.toolkit-pill {
-    flex-shrink: 0;
-}
-
 .toolkit-pill {
     padding: 0.35rem 0.9rem;
     border-radius: 999px;
@@ -1056,12 +1019,6 @@ footer {
 .toolkit-pill--red {
     background: rgba(248, 113, 113, 0.12);
     color: #f87171;
-}
-
-@media (max-width: 860px) {
-    .toolkit-list {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* ── PROJECTS ── */
@@ -1769,5 +1726,76 @@ body.js-ready .hero.reveal {
 
     .stat-divider {
         display: none;
+    }
+}
+
+/* ── TECHNOLOGIES I'VE TRIED ── */
+.technologies-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 2rem;
+}
+
+.technology-category {
+    min-width: 0;
+    padding: 1rem 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    background: transparent;
+}
+
+.technology-category-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-bottom: 0.9rem;
+}
+
+.technology-icon {
+    display: grid;
+    flex: 0 0 48px;
+    width: 48px;
+    height: 48px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--text);
+    transition: transform 200ms ease, filter 200ms ease;
+}
+
+.technology-icon img {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.technology-category:hover .technology-icon {
+    transform: translateY(-3px);
+    filter: drop-shadow(0 0 8px currentColor);
+}
+
+.technology-category h3 {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.92);
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+.technology-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.technology-pills .toolkit-pill {
+    flex-shrink: 1;
+}
+
+@media (max-width: 767px) {
+    .technologies-grid {
+        grid-template-columns: 1fr;
     }
 }
